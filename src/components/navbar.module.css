@@ -1,0 +1,21 @@
+.nuevo {
+    position:absolute;
+    top:0;
+    background-color: brown;
+    width:100vw;
+    height: 8vh;
+}
+
+.h1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right:26vw;    
+}
+
+.btn {
+   display:flex;
+   align-items: center;
+}
+
