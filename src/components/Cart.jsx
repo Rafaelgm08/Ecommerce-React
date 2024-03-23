@@ -16,11 +16,11 @@ export const Cart = () => {
       {cart.map((item) => (
         <div key={item.id} className="d-flex flex-column p-3 my-2 border border-1 w-50 ">
           <p>Cantidad: {item.quantity} </p>
-          <p>Precio Unitario: {item.price} </p>
+          <p>Precio Unitario: {item.precio} </p>
           <div>
             <button className="btn btn-danger" onClick={() => removeItem(item.id)}>
               Eliminar
-            </button>
+            </button> 
           </div>
         </div>
       ))}

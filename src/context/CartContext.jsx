@@ -27,7 +27,7 @@ export const CartContextProvider = ({ children }) => {
           subTotal: item.price * quantity
         }
 //hacemos una copia del cart actual y agregamos el nuevo item
-       setCart(...cart, newItem); 
+       setCart([...cart, newItem]); 
        console.log(cart)
        }
         
