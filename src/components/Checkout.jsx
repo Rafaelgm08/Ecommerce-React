@@ -3,6 +3,7 @@ import { CartContext } from "../context/CartContext";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../config/firebaseConfig";
 
+
 export const CheckOut = () => {
   const { cart, total, clearCart } = useContext(CartContext);
   const [formCheckout, setFormCheckout] = useState({
@@ -66,7 +67,7 @@ export const CheckOut = () => {
   }
 
   return (
-    <div className="container d-flex justify-content-center m-5">
+    <div className="container d-flex justify-content-center m-5 pt-5">
       <form onSubmit={handleSubmit}>
         <label htmlFor="">Nombre</label>
         <input type="text" className="form-control" value={formCheckout.name} onChange={handleName} />
