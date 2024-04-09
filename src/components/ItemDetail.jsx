@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ItemCount } from "./ItemCount";
 import styles from "./itemdetail.module.css";
 import { CartContext } from "../context/CartContext";
+import Swal from "sweetalert2"
 
 
 export const ItemDetail = ({id, name, description, stock, precio, img }) => {
@@ -17,7 +18,13 @@ const item = {
     name
 }
 
+
     addItem(item, quantity)
+
+    Swal.fire({
+        icon: "success",
+        title: "Se agrego el producto al carrito"
+      })
 
 }
 
@@ -34,5 +41,5 @@ const item = {
                 </div>
         </div>
 
-    )
-}
+    );
+};

@@ -4,6 +4,12 @@ import { Navbar } from "./components/Navbar"
 import { ItemDetailContainer } from "./components/ItemDetailContainer"
 import { Cart } from "./components/Cart"
 import { CartContextProvider } from "./context/CartContext"
+import { CheckOut } from "./components/Checkout"
+
+
+
+
+
 
 
 
@@ -16,6 +22,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:category" element={<ItemListContainer />} />
+        <Route path="/checkout" element={<CheckOut />}/>
         <Route path="/item/:id" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
